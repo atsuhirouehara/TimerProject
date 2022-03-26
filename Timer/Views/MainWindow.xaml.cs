@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 //uehara
 
@@ -24,10 +25,25 @@ namespace Timer.Views
     {
         public MainWindow()
         {
+
             InitializeComponent();
+
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        
+
+        private void Button_Start(object sender, RoutedEventArgs e)
+        {
+
+            
+        }
+
+        private void Button_StopAndReset(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Save(object sender, RoutedEventArgs e)
         {
 
         }

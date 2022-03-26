@@ -3,7 +3,57 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Timer"
              StartupUri="Views\MainWindow.xaml">
+
     <Application.Resources>
-         
+
+        <!--タイマー表示部のスタイル指定-->
+        <Style x:Name="lblTime" TargetType="Label">
+            <Setter Property="Content" Value="00:00"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Margin" Value="0,33,0,0"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Width" Value="276"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="36"/>
+        </Style>
+
+        <!--スタートボタンのスタイル指定（共通部分も設定）-->
+        <Style TargetType="Button" x:Key ="Button_Start_Style">
+            <Setter Property="Content" Value="Start"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Margin" Value="37,111,0,0"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Width" Value="75"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="LightBlue" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!--ストップ・リセットボタンのスタイル指定-->
+        <Style TargetType="Button" x:Key="Button_StopAndReset_style" BasedOn="{StaticResource Button_Start_Style}">
+            <Setter Property="Content" Value="Stop"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,111,0,0"/>
+        </Style>
+
+        <!--セーブボタンのスタイル指定-->
+        <Style TargetType="Button" x:Key="Button_Save_style" BasedOn="{StaticResource Button_Start_Style}">
+            <Setter Property="Content" Value="Save"/>
+            <Setter Property="Margin" Value="248,111,0,0"/>
+        </Style>
+
     </Application.Resources>
 </Application>
+
+
+<!--    ReadMe
+Horizontal ; 横方向に並べる
+Vertical　：　縦方向に並べる（何も指定してない場合はVerticalが指定される）
+Content : 中身をいじる
+Alignment：調整
+-->
+        
