@@ -8,17 +8,17 @@
         Topmost="True"
         Title="Timer" Height="215" Width="369" ResizeMode="CanMinimize">
     <Grid Height="179" VerticalAlignment="Top">
-   
+
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="75"/>
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBlock x:Name="timerTextBlock">00:00</TextBlock>
+        <TextBlock x:Name="timerTextBlock" FontSize="36">00:00</TextBlock>
 
         <StackPanel Style="{StaticResource Button_Style}">
-            <Button x:Name="btnStartAndStop" Style="{StaticResource Button_StartAndStop_Style}" Click="Button_StartAndStop" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Visible"/>
+            <Button x:Name="btnStartAndStop" Style="{StaticResource Button_StartAndStop_Style}" Click="Button_StartAndStop"/>
             <Button x:Name="btnReset" Style="{StaticResource Button_Reset_style}" Click="Button_Reset"/>
             <Button x:Name="btnSave" Style="{StaticResource Button_Save_style}" Click="Button_Save"/>
         </StackPanel>
