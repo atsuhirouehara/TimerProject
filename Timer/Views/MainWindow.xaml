@@ -10,14 +10,15 @@
     <Grid Height="179" VerticalAlignment="Top">
 
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition Height="75"/>
-            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="53"/>
+            <RowDefinition Height="Auto" MinHeight="50"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBlock x:Name="timerTextBlock" FontSize="36">00:00</TextBlock>
+        <TextBlock x:Name="timerTextBlock" FontSize="36" Grid.Row="1" Height="47" Width="85">00:00</TextBlock>
 
-        <StackPanel Style="{StaticResource Button_Style}">
+        <StackPanel Style="{StaticResource Button_Style}" Grid.Row="2" Width="252" Margin="0,3,0,0">
             <Button x:Name="btnStartAndStop" Style="{StaticResource Button_StartAndStop_Style}" Click="Button_StartAndStop"/>
             <Button x:Name="btnReset" Style="{StaticResource Button_Reset_style}" Click="Button_Reset"/>
             <Button x:Name="btnSave" Style="{StaticResource Button_Save_style}" Click="Button_Save"/>
