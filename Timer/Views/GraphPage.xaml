@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Timer.Views"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="GraphPage">
+      Title="GraphPage" Background="Aqua">
 
     <Grid>
         

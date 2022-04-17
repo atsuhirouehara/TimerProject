@@ -81,5 +81,11 @@ namespace Timer.Views
         {
 
         }
+
+        private void Menu_Graph_Click(object sender, RoutedEventArgs e)
+        {
+            var GraphPage = new GraphPage();
+            NavigationService.Navigate(GraphPage);
+        }
     }
 }
