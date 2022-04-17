@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Timer
+namespace Timer.Views
 {
     /// <summary>
-    /// DetailsWindow.xaml の相互作用ロジック
+    /// GraphPage.xaml の相互作用ロジック
     /// </summary>
-    public partial class DetailsWindow : Window
+    public partial class GraphPage : Page
     {
-        public DetailsWindow()
+        public GraphPage()
         {
             InitializeComponent();
         }
