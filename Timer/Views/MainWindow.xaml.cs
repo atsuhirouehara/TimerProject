@@ -25,7 +25,7 @@ namespace Timer.Views
         public MainWindow()
         {
             InitializeComponent();
-            Uri uri = new Uri("TimerPage.xaml", UriKind.Relative);  // パスを書くとき注意
+            Uri uri = new Uri("TimerPage.xaml", UriKind.Relative);  // パスを書くとき注意!!
             frame.Source = uri;
         }
     }
